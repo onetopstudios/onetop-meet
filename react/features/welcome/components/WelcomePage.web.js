@@ -367,6 +367,7 @@ class WelcomePage extends AbstractWelcomePage {
             MOBILE_DOWNLOAD_LINK_IOS,
         } = interfaceConfig;
 
+<<<<<<< HEAD
         return (
             <footer className="welcome-footer">
                 <div className="welcome-footer-centered">
@@ -394,6 +395,34 @@ class WelcomePage extends AbstractWelcomePage {
                                 <img src="./images/f-droid-badge.png" />
                             </a>
                         </div>
+=======
+        return (<footer className = 'welcome-footer'>
+            <div className = 'welcome-footer-centered'>
+                <div className = 'welcome-footer-padded'>
+                    <div className = 'welcome-footer-row-block welcome-footer--row-1'>
+                        <div className = 'welcome-footer-row-1-text'>{t('welcomepage.jitsiOnMobile')}</div>
+                        <a
+                            className = 'welcome-badge'
+                            href = { MOBILE_DOWNLOAD_LINK_IOS }>
+                            <img
+                                alt = { t('welcomepage.mobileDownLoadLinkIos') }
+                                src = './images/app-store-badge.png' />
+                        </a>
+                        <a
+                            className = 'welcome-badge'
+                            href = { MOBILE_DOWNLOAD_LINK_ANDROID }>
+                            <img
+                                alt = { t('welcomepage.mobileDownLoadLinkAndroid') }
+                                src = './images/google-play-badge.png' />
+                        </a>
+                        <a
+                            className = 'welcome-badge'
+                            href = { MOBILE_DOWNLOAD_LINK_F_DROID }>
+                            <img
+                                alt = { t('welcomepage.mobileDownLoadLinkFDroid') }
+                                src = './images/f-droid-badge.png' />
+                        </a>
+>>>>>>> 0e6addbfadd0764bf3f6c1b1f6217661aedf4212
                     </div>
                 </div>
             </footer>
